@@ -33,11 +33,32 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Grupo 2</p>
-        </footer>
-    </div>
 
+    </div>
+    <footer class="text-center text-lg-start" style="background-color: #808080;">
+
+        <div class="container-fluid py-2">
+            <div class="row justify-content-center">
+
+                <a href="https://www.facebook.com/" target="_blank" class="btn btn-sm btn-floating m-2" style="background-color: transparent; width: 60px; height: 60px; padding: 5px;">
+                    <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="Facebook Icon" style="width: 100%;">
+                </a>
+
+                <a href="https://www.youtube.com/" target="_blank" class="btn btn-sm btn-floating m-2" style="background-color: transparent; width: 60px; height: 60px; padding: 5px; ">
+                    <img src="https://www.youtube.com/yts/img/favicon_144-vfliLAfaB.png" alt="YouTube Icon" style="width: 100%;">
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank" class="btn btn-sm btn-floating m-2" style="background-color: transparent; width: 60px; height: 60px; padding: 5px; ">
+                    <img src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png" alt="Instagram Icon" style="width: 100%;">
+                </a>
+
+            </div>
+        </div>
+
+        <div class="text-center text-white p-1" style="background-color: rgba(0, 0, 0, 0.2);">
+            <p>&copy; @DateTime.Now.Year - Grupo 2 - @DateTime.Now.ToString("hh:mm tt, dd/MM/yyyy")</p>
+        </div>
+    </footer>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
